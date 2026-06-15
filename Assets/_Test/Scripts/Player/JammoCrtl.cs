@@ -51,7 +51,9 @@ public class JammoCrtl : MonoBehaviour
     private void MoveHandle()
     {
         if (rb == null) return ;
-        rb.velocity = moveDir * speed;
+
+        Vector3 nextPosition = rb.position + moveDir * speed * Time.fixedDeltaTime;
+        rb.MovePosition(nextPosition);
     }
 
     private void DirHAndle()
