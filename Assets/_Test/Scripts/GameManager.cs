@@ -14,7 +14,6 @@ public class GameManager : MonoBehaviour
     [SerializeField] private Transform goal_2;
     [SerializeField] private Button kickButton;
     [SerializeField] private Button autoKickButton;
-    [SerializeField] private float goalDistance = 2f;
     [SerializeField] private float cameraReturnDelay = 2f;
 
 

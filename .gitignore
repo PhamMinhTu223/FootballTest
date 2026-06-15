@@ -2,6 +2,8 @@
 [Ll]ibrary/
 [Tt]emp/
 [Oo]bj/
+!Assets/_Test/Scripts/Obj/
+!Assets/_Test/Scripts/Obj/**
 [Bb]uild/
 [Bb]uilds/
 [Ll]ogs/

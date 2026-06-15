@@ -234,7 +234,6 @@ MonoBehaviour:
   goal_2: {fileID: 553625723}
   kickButton: {fileID: 1322986235}
   autoKickButton: {fileID: 1049618493}
-  goalDistance: 2
   cameraReturnDelay: 2
 --- !u!1 &480710750
 GameObject:

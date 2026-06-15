@@ -56,8 +56,13 @@ public class JammoCrtl : MonoBehaviour
 
     private void DirHAndle()
     {
-        float x = Input.GetAxisRaw("Horizontal");
-        float z = Input.GetAxisRaw("Vertical");
+        float x = 0f;
+        float z = 0f;
+
+        if (Input.GetKey(KeyCode.A)) x -= 1f;
+        if (Input.GetKey(KeyCode.D)) x += 1f;
+        if (Input.GetKey(KeyCode.S)) z -= 1f;
+        if (Input.GetKey(KeyCode.W)) z += 1f;
         moveDir = new Vector3(x, 0, z).normalized;
 
         if (ani == null) return;
@@ -88,3 +93,4 @@ public class JammoCrtl : MonoBehaviour
     }
     #endregion
 }
+
