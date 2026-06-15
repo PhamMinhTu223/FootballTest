@@ -2,17 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class KickButton : MonoBehaviour
+public class KickButton : ButtonBase
 {
-    // Start is called before the first frame update
-    void Start()
+    protected override void OnButtonClick()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if(GameManager.Instance == null) return;
+        GameManager.Instance.BallKickHandle();
     }
 }

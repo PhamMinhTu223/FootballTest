@@ -15,7 +15,7 @@ public class CameraCtrl : MonoBehaviour
     {
         if (GameManager.Instance != null)
         {
-            target = GameManager.Instance.Jammo.transform;
+            Follow(GameManager.Instance.Jammo.transform);
         }
     }
 
@@ -32,5 +32,10 @@ public class CameraCtrl : MonoBehaviour
         );
 
         transform.rotation = Quaternion.Euler(topDownRotation);
+    }
+
+    public void Follow(Transform newTarget)
+    {
+        target = newTarget;
     }
 }
